@@ -1,0 +1,12 @@
+facename, smileyEvil2, smileyCreepy, smileyPirate3, smileyOld, smileyRedBeard, smiley
+decalname, none
+headskin, 0.687 0.532 0.347, 0.486 0.308 0.095, 0.860 0.808 0.612, 0.523 0.459 0.377, 1.000 0.916 0.808
+lHandPike clone headskin
+rhand clone headskin
+chest 0.178 0.065 0.000, 0.252 0.252 0.200, 0.435 0.435 0.435, 0.518 0.523 0.377
+larm 0.500 0.500 0.500, 0.250 0.250 0.250, 0.252 0.252 0.200, 0.518 0.523 0.377, 0.308 0.176 0.026
+rarm clone larm
+pants 0.252 0.200 0.200, 0.320 0.320 0.320, 0.061 0.140 0.201, 0.500 0.500 0.500
+lfoot 0.252 0.200 0.200, 0.320 0.320 0.320, 0.061 0.140 0.201, 0.500 0.500 0.500
+rfoot clone lfoot
+shield 1 1 1
