@@ -4,6 +4,14 @@ package IsGroundedPackage {
 		Parent::onAdd(%this, %obj);
 		%obj.isGroundedLoop();
 	}
+
+	function Armor::onCollision(%this, %obj, %col, %vec, %speed) {
+		Parent::onCollision(%this, %obj, %col, %vec, %speed);
+
+		if(%obj.getState() !$= "Dead" && %col.getState() !$= "Dead") {
+			%obj.isGrounded = true;
+		}
+	}
 };
 activatePackage(IsGroundedPackage);
 
