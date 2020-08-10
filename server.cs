@@ -27,8 +27,6 @@ exec("./bull/shield.cs");
 exec("./bull/wallfx.cs");
 exec("./bull/chargefx.cs");
 
-setLogMode(1);
-
 datablock StaticShapeData(VisibilityStatic) {
 	shapeFile = "./visibility test3.dts";
 };
