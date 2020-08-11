@@ -1,5 +1,5 @@
-deActivatePackage(IsGroundedPackage);
-package IsGroundedPackage {
+deActivatePackage(BeefBoyIsGroundedPackage);
+package BeefBoyIsGroundedPackage {
 	function Armor::onAdd(%this, %obj) {
 		Parent::onAdd(%this, %obj);
 		%obj.isGroundedLoop();
@@ -13,7 +13,7 @@ package IsGroundedPackage {
 		}
 	}
 };
-activatePackage(IsGroundedPackage);
+activatePackage(BeefBoyIsGroundedPackage);
 
 function Player::isGroundedLoop(%this) {
 	%this.isGrounded = !containerBoxEmpty($TypeMasks::fxBrickObjectType | $TypeMasks::StaticObjectType, %this.getPosition(), 0.6, 0.6, 0.6);

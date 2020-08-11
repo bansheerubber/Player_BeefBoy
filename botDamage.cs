@@ -1,5 +1,5 @@
-deActivatePackage(BotDamage);
-package BotDamage {
+deActivatePackage(BeefBoyBotDamage);
+package BeefBoyBotDamage {
 	function Player::damage(%this, %col, %position, %damage, %damageType) {
 		Parent::damage(%this, %col, %position, %damage, %damageType);
 
@@ -11,7 +11,7 @@ package BotDamage {
 		}
 	}
 };
-activatePackage(BotDamage);
+activatePackage(BeefBoyBotDamage);
 
 function AiPlayer::onBotDamage(%this, %victim, %position, %damage, %damageType) {
 
