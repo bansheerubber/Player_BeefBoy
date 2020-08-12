@@ -8,8 +8,10 @@ package BeefBoyIsGroundedPackage {
 	function Armor::onCollision(%this, %obj, %col, %vec, %speed) {
 		Parent::onCollision(%this, %obj, %col, %vec, %speed);
 
-		if(%obj.getState() !$= "Dead" && %col.getState() !$= "Dead") {
-			%obj.isGrounded = true;
+		if(isObject(%col) && isFunction(%col.getClassName(), "getState")) {
+			if(%obj.getState() !$= "Dead" && %col.getState() !$= "Dead") {
+				%obj.isGrounded = true;
+			}
 		}
 	}
 };
